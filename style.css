@@ -74,22 +74,62 @@ img {
 
 @media screen and (max-width: 420px) {
 
-  head{
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0">`
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: .8rem;
   }
 
-  #lezioni .row, #steps .row{
+  h1{
+    font-size: 1.3rem;
+  }
+  .row{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #F2F2CD ;
+    margin-top: 0;
   }
 
-  #lezioni, #why{
-    background-color: #F2F2CD;
+  .row > *{
+    margin: 5px 0;
   }
 
   #lezioni .row>.left,
-  #lezioni .row>.right {
-    width: 90%;
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right,
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 95%;
     float: none;
+  }
+
+  #steps .row{
+    background-color: white;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 0;
+  }
+
+  hr{
+    border-bottom: none;
+  }
+
+  img{
+    height: auto;
+    width: 20%;
+    margin-bottom: 3px;
+  }
+
+  #why .row img{
+   padding: 15px;
   }
 }
